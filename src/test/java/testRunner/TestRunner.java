@@ -5,11 +5,16 @@
 //import org.junit.runner.RunWith;
 //
 //@RunWith(Cucumber.class)
-//@CucumberOptions(features = "/Users/putraagung/IdeaProjects/SeleniumCucumber/src/test/java/Features/",
-//        glue = "stepDefinitions",
-//        monochrome = true
-//)
-//      //  {"pretty", "html:target/HtmlReports"}
+//@CucumberOptions features="src/test/java/HookDemo/HookDemo.feature",
+//        glue= {"StepDefinitionHooks"},
+//        monochrome = true,
+//         plugin = {"pretty", "junit:target/JUnitReports/report.xml",
+//                 "json:target/JSONReports/report.json",
+//                 "html:target/HtmlReports", "json:target/cucumber.json"
+//                 },
+//        tags = "@smoke or @regression"
+//                 )
+//
 //
 //public class TestRunner {
 //}
